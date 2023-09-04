@@ -3,14 +3,15 @@ import React from 'react';
 import './styles.css';
 
 function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body>
-        {children}
+	return (
+		<html lang="en">
+			<body>
+				{children}
 
-      </body>
-    </html>
-  );
+				<footer>{new Date().toLocaleDateString()}</footer>
+			</body>
+		</html>
+	);
 }
 
 export default RootLayout;
